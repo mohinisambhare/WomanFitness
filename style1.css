@@ -1,0 +1,136 @@
+/* CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navBar-height: 59px;
+}
+/* Navigation Bar*/
+#navBar{
+    display: flex;
+    align-items: center;
+}
+
+/* Logo And Images*/
+#logo{
+  margin: 10px 34px;
+}
+#logo img{
+     height: 56px;
+    margin: 3px 6px;
+
+}
+/*NAvigation Bar: List Styling */
+
+#navBar{
+    position: relative;
+}
+#navBar ul{
+    display: flex;
+    font-family: 'Baloo Bhai';
+}
+#navBar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navBar ul li{
+    /*color: white;*/
+   list-style: none;
+   font-size: 1.3rem;
+}
+#navBar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navBar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+/*Home Secyion*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 630px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url(Background\ img1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Utility Classes*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+.h-second{
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*Services Section*/
+
+#Services
+{
+   margin: 50px;
+   display: flex;
+   border: 2px solid rgb(216, 36, 36);
+   
+}
+
+#Services.me
+{
+  
+   border: 2px solid rgb(216, 36, 36);
+}
+
+
+#Services.me img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    
+}
+.center{
+    text-align: center;
+}
